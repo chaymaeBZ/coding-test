@@ -1,6 +1,8 @@
 <h1>Tweets#index</h1>
 <p>Find me in app/views/tweets/index.html.erb</p>
-<%= button_to "Fetch", root_path, :remote => true, :method => "get" %>
+<%= button_to "Fetch", root_path, :remote => true, :method => "get", class: "ui teal button" %>
 
 <div id="show-mentions">
+  <%= render partial: 'mentions' %>
+ 
 </div>
