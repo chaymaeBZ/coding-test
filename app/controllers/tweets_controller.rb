@@ -2,6 +2,7 @@ class TweetsController < ApplicationController
   before_action :get_client
   def index
     @mentions = @client.mentions_timeline
+    #pry
   end
 
   private
