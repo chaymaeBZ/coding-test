@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # app gems to install
 gem 'twitter'
 gem 'semantic-ui-sass'
+gem 'jquery-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

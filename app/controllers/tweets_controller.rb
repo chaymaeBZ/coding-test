@@ -1,8 +1,12 @@
 class TweetsController < ApplicationController
+  respond_to? :html, :js
   before_action :get_client
   def index
-    @mentions = @client.mentions_timeline
+    @mentions = @client.mentions_timeline.map do |mention|
+      Mention.create(:tweet_id => mention.id, :text => mention.full_text, :username => mention.user.name)
+    end
     #pry
+    
   end
 
   private
