@@ -1,4 +1,12 @@
-<%= form_for @reply, url: {action: "create"}, remote: true, html: {class:"ui form", rows: "2" } do |f| %>
-  <%= f.text_area :body %>
-  <%= f.button :submit %>
+<%= form_for @reply, url: {action: "create"}, remote: true, html: {class:"ui form"} do |f| %>
+  <div class="field">
+    <%= f.text_area :body, rows: "2",placeholder: "Reply to Tweet ..."  %>
+  </div>
+  <%= f.button :submit, class: "ui teal button" %>
+
 <% end %>
+
+
+<!-- spacing -->
+
+<div style="min-height: 10px"></div>

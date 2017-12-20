@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171219202404) do
+ActiveRecord::Schema.define(version: 20171220154535) do
 
   create_table "mentions", force: :cascade do |t|
     t.integer "tweet_id", limit: 8
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20171219202404) do
     t.string "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "user_screen_name"
   end
 
   create_table "replies", force: :cascade do |t|
