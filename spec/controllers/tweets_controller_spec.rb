@@ -6,8 +6,7 @@ RSpec.describe TweetsController, :type => :controller do
   context "GET index" do
      before(:each) { get :index, {format: :js, xhr: true} }
     
-    it "get all mentions stores them" do
-      
+    it "get all mentions stores them" do 
       expect(assigns[:mentions]).to match_array mentions
     end
 
@@ -17,6 +16,7 @@ RSpec.describe TweetsController, :type => :controller do
     end
 
   end 
+  # stub request wach kadar
 
 
 
