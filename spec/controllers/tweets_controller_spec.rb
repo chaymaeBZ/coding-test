@@ -16,7 +16,6 @@ RSpec.describe TweetsController, :type => :controller do
     end
 
   end 
-  # stub request wach kadar
 
 
 

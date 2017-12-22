@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe RepliesController, :type => :controller do
-  let(:mention) { Mention.first }
+  
 
 
   context "POST create" do
@@ -12,10 +12,9 @@ RSpec.describe RepliesController, :type => :controller do
     it "should reject replies with more than 280 chars" do
       text = "a" * 281
       rep = Reply.new(body: text)
-      ap "--------"
-      ap mention
+    
 
-      params = { reply: { body: rep.body }, tweet_id: mention.tweet_id  } 
+      params = { reply: { body: rep.body }, tweet_id: "943231474354016257" } 
       params.merge!(format: :js, xhr: true)
       post :create, params: params
 
