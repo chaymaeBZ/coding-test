@@ -1,6 +1,0 @@
-<h1>Tweets#index</h1>
-<p>Find me in app/views/tweets/index.html.erb</p>
-<div id="show-mentions">
-<%= button_to "Fetch", root_path, :remote => true, :method => "get" %>
-</div>
-<%= render "mentions" %>
