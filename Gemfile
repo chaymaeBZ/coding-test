@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'twitter'
 gem 'semantic-ui-sass'
 gem 'jquery-rails'
+gem "figaro"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -48,8 +49,9 @@ group :development, :test do
   gem 'selenium-webdriver'
 
   # use rspec
-  gem "rspec-rails" 
+  gem "rspec-rails"
   gem 'rails-controller-testing'
+  gem 'factory_bot_rails'
   gem 'factory_bot'
 
   # awesome print
