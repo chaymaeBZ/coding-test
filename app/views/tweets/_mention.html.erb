@@ -1,16 +1,16 @@
 <div class="item" >
   <div class="right floated content">
     <%= link_to new_tweet_reply_path(tweet_id: mention.tweet_id), remote: true do %>
-    <div class="ui blue button">Reply</div>
-  <% end %>
+      <div class="ui blue button">Reply</div>
+    <% end %>
   </div>
 
-     <div class="content">
-       <div class="header">
-         <%= mention.username %> :
-       </div>
-       <%= mention.text %>
+   <div class="content">
+     <div class="header">
+       <%= mention.username %> :
      </div>
+     <%= mention.text %>
+   </div>
 </div>
 
-       <div class="reply" id="new-reply-form-<%= mention.tweet_id %>"></div>
+<div class="reply" id="new-reply-form-<%= mention.tweet_id %>"></div>
