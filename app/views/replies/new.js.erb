@@ -1,4 +1,15 @@
 $('.reply').css("display", "none");
 $('#new-reply-form-<%= params[:tweet_id] %>').html("<%= j (render 'replies/reply') %>");
 $('#new-reply-form-<%= params[:tweet_id] %>').slideDown(350);
+$('#reply-message').select().focus();
 
+$('#reply-message').keyup(function () {
+  var max = 280;
+  var len = $(this).val().length;
+  if (len >= max) {
+    $('#num-count').text(' you have reached the limit');
+  } else {
+    var char = max - len;
+    $('#num-count').text(char + ' characters left');
+  }
+});
