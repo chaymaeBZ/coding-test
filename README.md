@@ -1,6 +1,6 @@
 # coding test
 
-This is an attempt to solve a coding test by dimelo. Here is what it says :
+This is an attempt to solve a coding test. Here is what it says :
 
 ### Subject
 
@@ -14,6 +14,8 @@ mentions, store them in the database, and refresh the view
 to the twitter limit (140)
 * It should not be possible to submit the reply form if the reply is longer than the
 twitter limit
+
+!! note : The OAuth process is out of scope for this exercise, you must create a twitter application and generate an access token for yourself, then use it directly in your app.
 
 # Running the app
 
